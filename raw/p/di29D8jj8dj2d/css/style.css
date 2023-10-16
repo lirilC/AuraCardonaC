@@ -2,6 +2,8 @@ body{
   width: 100vw; 
   height: 100vh; 
   margin: 0px; 
+  overflow: hidden; 
+  background-color: antiquewhite; 
 } 
 div#Start{ 
   width: 20px; 
@@ -9,14 +11,14 @@ div#Start{
   position: absolute; 
   top: calc(50% - 10px); 
   left: 117px; 
-  background: #6d330a; 
+  background: #b7532b; 
 } 
 div#fantasma_de_Start{ 
   width: 20px; 
   height: 20px; 
   position: absolute; 
   top: calc(50% - 10px); 
-  left: 117px; 
+  left: calc(100vw - 137px); 
   background: #0000; 
   border: 1px #33df9e dotted; 
 } 
@@ -33,10 +35,17 @@ body > aside > svg{
     box-sizing: border-box; 
     position: absolute; 
 } 
-p#loaded{ 
-    position: absolute; 
-    bottom: 0; 
-    font-family: monospace; 
-    word-break: break-word; 
+label{ 
+  z-index: 2; 
+  position: absolute; 
+  bottom: 3px; 
+  left: 10px; 
+  font-size: 16px; 
+  font-family: courier, monospace, consolas; 
+} 
+#dificulTad{ 
+  font-family: courier, monospace, consolas; 
+  font-size: 16px; 
+  width: 3.5em; 
 } 
 /*Hoja de estilos en cascada (cascade style sheet)*/
